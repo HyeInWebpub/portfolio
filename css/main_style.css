@@ -59,13 +59,14 @@ nav.pc_nav .submenu{display: none;}
 /* ======== 헤더 ======== */
 .headbox{padding-top: 100px;}
 header h1{float: left; width: 420px; height: 420px; background: url(../images/logo.png) no-repeat center;}
-header .txtbox{float: left; margin-top: 220px;}
+header .txtbox{float: left; margin-top: 180px;}
 header .txtbox::before{content: ''; display: block; width: 10px; height: 26px; background-color: #e14646; float: left; margin: 0 10px 160px 0;}
 header .txtbox strong{font-size: 32px; font-weight: 400; color: #3c3c3b; line-height: 26px;}
 header .txtbox h2{font-size: 40px; font-weight: 400; color: #3c3c3b; line-height: 30px; margin-top: 20px;}
 header .txtbox h2::before{display: none;}
 header .txtbox p{font-size: 28px; font-weight: 400; color: #3c3c3b; margin-top: 20px; line-height: 20px;}
-header .txtbox em{display: block; font-size: 20px; font-weight: 400; color: #3c3c3b; margin-top: 20px; line-height: 20px;}
+header .txtbox em{display: block; font-size: 20px; font-weight: 400; color: #3c3c3b; margin-top: 20px; line-height: 18px;}
+header .txtbox em.participate{font-weight: 500; color: #e14646;}
 
 
 
