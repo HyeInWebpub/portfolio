@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="웹 퍼블리셔 프론트엔드 포트폴리오">
+    <meta name="keywords" content="웹, 퍼블리싱, 퍼블리셔, 프론트엔드, 디자인, 포트폴리오">
+    <meta name="author" content="KIM Hye-In">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi&colon; Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+
+    <!-- jquery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/main_responsive.css">
+    
+    <!-- js -->
+    <script src="js/main_custom.js" defer></script>
+</head>
+
+<body>
+    <!-- 메인메뉴 -->
+    <nav class="pc_nav">
+        <div class="navi_bg">
+            <ul class="mainmenu">
+                <li class="m_who"><a href="#sec_who"><p>Who?</p></a></li>
+                <li class="m_focus"><a href="#sec_focus"><p>FOCUS</p></a></li>
+                <li class="m_works"><a href="#sec_works"><p>WORKS</p></a>
+                    <ul class="submenu">
+                        <li class="works2023"><a href="#sec_works_2023"><em>- 2023</em></a></li>
+                        <li class="works2022"><a href="#sec_works_2022"><em>- 2022</em></a></li>
+                    </ul>
+                </li>
+                <li class="m_process"><a href="#sec_pro"><p>PROCESS</p></a>
+                    <ul class="submenu">
+                        <li class="pro_wf"><a href="#sec_pro"><em>- Workflow</em></a></li>
+                        <li class="pro_sa"><a href="#sample"><em>- Sample Data</em></a></li>
+                    </ul>
+                </li>
+                <li class="m_other"><a href="#sec_other"><p>Other</p></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 해상도 1299 ~ 아이패드 미니 이상 메인메뉴 -->
+    <nav class="tab_nav">
+        <div class="navi_bg">
+            <ul class="mainmenu">
+                <li class="m_who"><a href="#sec_who"><p>Who?</p></a></li>
+                <li class="m_focus"><a href="#sec_focus"><p>FOCUS</p></a></li>
+                <li class="m_works"><a href="#sec_works"><p>WORKS</p></a></li>
+                <li class="m_process"><a href="#sec_pro"><p>PROCESS</p></a></li>
+                <li class="m_other"><a href="#sec_other"><p>Other</p></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 모바일 메인메뉴 -->
+    <nav class="mobile_nav">
+        <button type="button" class="btn_open"><i class="fa-solid fa-bars"></i></button>
+        <div class="navi_bg">
+            <button type="button" class="btn_close"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="mainmenu">
+                <li class="m_who"><a href="#sec_who"><p>Who?</p></a></li>
+                <li class="m_focus"><a href="#sec_focus"><p>FOCUS</p></a></li>
+                <li class="m_works"><a href="#sec_works"><p>WORKS</p></a></li>
+                <li class="m_process"><a href="#sec_pro"><p>PROCESS</p></a></li>
+                <li class="m_other"><a href="#sec_other"><p>Other</p></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="headbox wrap clearfix">
+            <h1><span class="blind">로고</span></h1>
+            <div class="txtbox">
+                <strong>Web Publishing & Web Design</strong>
+                <h2>PORTFOLIO</h2>
+                <p>KIM, HYE-IN</p>
+                <em>이 사이트는 반응형 웹입니다.</em>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 메인 -->
+    <main>
+        <!-- 섹션1 who -->
+        <section class="who wrap clearfix" id="sec_who">
+            <ul class="who_cont clearfix in_right">
+                <li class="w_bgtxt"><strong>ABOUT</strong></li>
+                <li class="who_h">
+                    <h3>HISTORY</h3>
+                    <ul>
+                        <li>
+                            <p class="w_btm_space">
+                                - 스타트업 근무 : 웹디자인, 웹퍼블리싱, 사이트 유지관리 및 부분 리뉴얼(2023.01~ 2023.10)
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="w_btm_space">
+                                - 국가기간전략산업직종훈련 수료 : UI/UX 웹디자인 & 웹퍼블리셔 양성 과정(2022.02.22 ~ 08.16)
+                            </p>
+                        </li>
+                        <li>
+                            <p class="w_btm_space">
+                                - 체험전시관 근무 : 전시 기획, 전시 디자인 총감리, 전시 설치물 및 관련 디자인물 제작(5년)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                - 산업디자인 전공
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="who_s">
+                    <h3>SKILLS</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <p>
+                                - HTML / CSS
+                                <img src="images/icons/level3.png" alt="활용도 상">
+                            </p>
+                            <p>
+                                - JavaScript
+                                <img src="images/icons/level2.png" alt="활용도 중">
+                            </p>
+                            <p>
+                                - Jquery
+                                <img src="images/icons/level2.png" alt="활용도 중">
+                            </p>
+                            <p>
+                                - Github
+                                <img src="images/icons/level1.png" alt="활용도 하">
+                            </p>
+                            <p class="w_btm_space">- 웹디자인기능사</p>
+                            <p>
+                                - Photoshop
+                                <img src="images/icons/level3.png" alt="활용도 상">
+                            </p>
+                            <p>
+                                - Illustrator
+                                <img src="images/icons/level3.png" alt="활용도 상">
+                            </p>
+                            <p>
+                                - XD
+                                <img src="images/icons/level3.png" alt="활용도 상">
+                            </p>
+                            <p>
+                                - Figma
+                                <img src="images/icons/level3.png" alt="활용도 상">
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>- TOEIC 880</p>
+                            <p>
+                                - C / C# / Unity
+                                <img src="images/icons/level1.png" alt="활용도 하">
+                            </p>
+                            <p>- MOS Master 2007</p>
+                            <p>
+                                - Notion / Slack
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- 섹션2 focus -->
+        <section class="focus wrap clearfix">
+            <div class="in_right" id="sec_focus">
+                <h2>FOCUS</h2>
+                <ul>
+
+                    <li class="imgbox">
+                        <a href="landing_seocho.html">
+                            <img class="image_center" src="images/focus_img_02.png" alt="서초구보건소 리뉴얼">
+                            <div class="fo_txtbox">
+                                <h3>서초구보건소</h3>
+                                <p>리뉴얼 예시 / PC웹 웹표준 / 2022. 06</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="imgbox">
+                        <a href="landing_hotelrp.html">
+                            <img class="image_center" src="images/focus_img_01.png" alt="자유주제 사이트">
+                            <div class="fo_txtbox">
+                                <h3>Hotel Royal Paradise</h3>
+                                <p>자유주제 웹사이트 / PC웹 웹표준 / 2022. 07</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- 섹션3 works -->
+        <section class="works">
+            <div class="wo_cont wrap" id="sec_works">
+                <h2>WORKS</h2>
+
+                <h3 id="sec_works_2023">2023</h3>
+                <ul class="clearfix">
+                    <li class="imgbox">
+                        <a href="pages/faceGenerator/login_m.html" onClick="window.open(this.href, '', 'width=414, height=896'); return false;">
+                            <img class="image_center" src="images/works_img_faceGenerator.png" alt="AI Face Generator">
+                            <div class="wo_txtbox">
+                                <h4>AI Face Generator</h4>
+                                <p> 실무 결과물 / 모바일 반응형웹 추가작업 / 2023. 09</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+                
+                <h3 id="sec_works_2022">2022</h3>
+                <ul class="clearfix">
+                    <li class="imgbox">
+                        <a href="pages/homenature/" onClick="window.open(this.href, '', 'width=1800, height=960'); return false;">
+                            <img class="image_center" src="images/works_img_homenature.png" alt="홈네이처">
+                            <div class="wo_txtbox">
+                                <h4>HOME NATURE</h4>
+                                <p>PC웹 & 모바일 반응형 / isotope(유료) / 2022. 07</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="imgbox">
+                        <a href="pages/kumkang/" onClick="window.open(this.href, '', 'width=1800, height=960'); return false;">
+                            <img class="image_center" src="images/works_img_kumkang.png" alt="금강제화">
+                            <div class="wo_txtbox">
+                                <h4>금강제화</h4>
+                                <p>스크롤 애니메이션 예시 / PC웹 반응형 / 2022. 06</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="imgbox">
+                        <a href="landing_luxwear.html">
+                            <img class="image_center" src="images/works_img_luxwear.png" alt="룩스웨어">
+                            <div class="wo_txtbox">
+                                <h4>룩스웨어</h4>
+                                <p>리뉴얼 예시 / PC웹 / 2022. 07</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="imgbox">
+                        <a href="landing_jamstory.html">
+                            <img class="image_center" src="images/works_img_jam.png" alt="잼스토리">
+                            <div class="wo_txtbox">
+                                <h4>JAM STORY</h4>
+                                <p>리뉴얼 예시 / PC웹 / 2022. 04</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- 섹션4 process -->
+        <section class="process">
+            <div class="pro_flow" id="sec_pro">
+                <h2>PROCESS</h2>
+                <strong>사이트는 아래의 디자인 기획 프로세스를 따라 제작됩니다.</strong>
+                <ul class="orgn clearfix">
+                    <li><p>기획</p></li>
+                    <li><p>조사</p></li>
+                    <li><p>컨셉</p></li>
+                    <li><p>컬러 &sol; 폰트</p></li>
+                    <li><p>레이아웃 <br>&amp; 스케치</p></li>
+                    <li><p>와이어프레임</p></li>
+                    <li><p>디자인</p></li>
+                    <li><p>코딩</p></li>
+                    <li><p>수정 <br>&amp; 퍼블리싱</p></li>
+                </ul>
+                <ul class="short clearfix">
+                    <li><p>기획</p></li>
+                    <li><p>조사</p></li>
+                    <li><p>컨셉</p></li>
+                    <li><p>컬러 &sol; 폰트</p></li>
+                    <li><p>레이아웃 <br>&amp; 스케치</p></li>
+                    <li><p>와이어프레임</p></li>
+                    <li><p>디자인</p></li>
+                    <li><p>코딩</p></li>
+                    <li><p>수정 <br>&amp; 퍼블리싱</p></li>
+                </ul>
+            </div>
+            <div class="pro_sample clearfix" id="sample">
+                <h3>Sample Data</h3>
+                <a href="downloads/hotelRoyalParadise_guide.pdf">DOWNLOAD</a>
+                <p><i class="fa-regular fa-file-lines"></i> Hotel Royal Paradise / 자유주제 개인작업 2022.08</p>
+            </div>
+        </section>
+
+
+        <!-- 섹션5 other -->
+        <section class="other" id="sec_other">
+            <div class="oth_cont clearfix">
+                <ul class="oth_imgbox">
+                    <li class="imgbox fullheight"><img class="image_center" src="images/other_img01.png" alt="웹 게시물 디자인"></li>
+                    <li class="imgbox"><img class="image_center" src="images/other_img02.png" alt="인쇄물 디자인"></li>
+                    <li class="imgbox"><img class="image_center" src="images/other_img03.png" alt="공간 기획 및 디자인"></li>
+                </ul>
+                <ul class="oth_menu">
+                    <li class="nonhover on"><p>웹 게시물 디자인</p></li>
+                    <li class="nonhover"><p>인쇄물 디자인</p></li>
+                    <li class="nonhover"><p>공간 기획 & 디자인</p></li>
+                </ul>
+                <h2>OTHER</h2>
+            </div>
+
+            <div class="mobile_oth">
+                <h2>OTHER</h2>
+                <ul>
+                    <li class="imgbox"><img class="image_center" src="images/other_img01.png" alt="웹 게시물 디자인"></li>
+                    <li class="imgbox"><img class="image_center" src="images/other_img02.png" alt="인쇄물 디자인"></li>
+                    <li class="imgbox"><img class="image_center" src="images/other_img03.png" alt="공간 기획 및 디자인"></li>
+                </ul>
+            </div>
+
+            <div class="oth_modal">
+                <div class="inner">
+                    <i class="fa-solid fa-xmark"></i>
+                    <div class="modalbox">
+                        <div class="scrollbox">
+                            <img src="images/other_img02.png" alt="크게보기">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- to top 버튼 -->
+    <button type="button" class="totop">TOP<i class="fa-solid fa-angle-up"></i></button>
+
+    <!-- 푸터 -->
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2022. Hye-In KIM. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

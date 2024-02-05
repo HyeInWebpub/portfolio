@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+.container{width: 1280px; height: 85vh; border: 1px solid #3c3c3b; border-radius: 10px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;}
+.wrap{width: 530px; margin: 0 auto;}
+
+
+/* ========== 헤더 ========== */
+header{font-family: 'Roboto Slab', serif; color: #3c3c3b;}
+.h_wide{width: 100%; height: 85vh; position: relative;}
+/* --- (홈버튼) */
+.h_wide a.toHome{position: absolute; left: 55px; top: 55px;}
+.h_wide a.toHome img:nth-child(2){display: none;}
+/* --- (타이틀) */
+.h_wide h2{font-size: 36px; position: absolute; left: 50%; top: 55px; transform: translateX(-50%);}
+/* --- (내비게이션 와이드) */
+.h_wide .menu{width: 120px; height: 160px; position: absolute; left: 75px; top: 50%; transform: translateY(-50%);}
+.h_wide .menu em{display: block; width: 110px; height: 40px; background: radial-gradient(50% 50%, #FAC2C2 20%, rgba(217, 217, 217, 0) 70%); text-indent: -9999px; position: absolute; left: -20px; top: 120px; animation: aniLight 2s normal infinite;}
+@keyframes aniLight{0%{opacity: 0;} 50%{opacity: 1;} 100%{opacity: 0;}}
+.h_wide .menu nav{position: absolute; left: 0; top: 0;}
+.h_wide .menu nav ul li a{display: block; margin: 0 auto; position: relative; color: #3c3c3b; font-size: 20px; line-height: 40px;}
+.h_wide .menu nav ul li a::before{content: ''; display: block; width: 10px; height: 10px; border-radius: 50%; box-sizing: border-box; border: 1px solid #3c3c3b; position: absolute; left: -20px; top: 15px;}
+.h_wide .menu nav ul li a strong{display: block;}
+.h_wide .menu nav ul li a span{display: block; font-family: 'Noto Sans KR'; display: none;}
+/* on */
+.h_wide .menu nav ul li.on a::before{background-color: #3c3c3b;}
+.h_wide .menu nav ul li.on a strong{display: none;}
+.h_wide .menu nav ul li.on a span{display: block;}
+/* --- (내비게이션 모바일) */
+.h_mobile{display: none;}
+
+
+/* ========== 메인 ========== */
+main{font-family: 'Noto Sans KR', sans-serif; color: #3c3c3b; width: 1048px; height: calc(100% - 220px); position: absolute; top: 140px; left: 200px; overflow: auto;}
+main .noscroll{width: 100%; height: 100%; display: none;}
+main .noscroll549{width: 100%; height: 100%; display: none;}
+
+
+/* --- (malihu 스크롤바) */
+main .mhscroll{width: 100%; height: 100%;}
+main .mCSB_inside>.mCSB_container{margin-right: 0;}
+main #mCSB_1_scrollbar_vertical{right: 10px;}
+/* 드래그바 색상, 오퍼시티 변경 :
+jquery.mCustomScrollbar.css의 701줄부터 컬러 변경
+335줄 주석처리*/
+main .mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail{ width: 1px; background-color: #3c3c3b;}
+
+/* --- (본문 박스) */
+main .content_box{width: 1030px;}
+main h3{font-weight: 500; font-size: 26px; margin-bottom: 30px;}
+main h3::before{content: ''; display: block; width: 26px; height: 5px; background-color: #e14646; margin-bottom: 20px;}
+main h4{font-size: 18px; margin-bottom: 20px;}
+main h4::before{content: ''; display: block; width: 20px; height: 1px; background-color: #3c3c3b; margin-bottom: 20px;}
+main p{color: #717171; font-size: 16px; line-height: 1.5;}
+
+
+
+
+/* =================================================== */
+/* -------------------- 미디어쿼리 -------------------- */
+/* =================================================== */
+
+
+@media (hover: hover) {
+    /* --- (홈버튼) */
+    .h_wide a.toHome:hover img:nth-child(1){display: none;}
+    .h_wide a.toHome:hover img:nth-child(2){display: block;}
+    /* --- (내비게이션 와이드) */
+    .h_wide .menu nav ul li:hover a::before{background-color: #3c3c3b;}
+    .h_wide .menu nav ul li:hover a strong{display: none;}
+    .h_wide .menu nav ul li:hover a span{display: block;}
+}
+
+
+/* ipad mini 해상도 이상의 태블릿 or 브라우저 */
+@media screen and (max-width: 1299px){
+    .container{width: calc(100% - 130px); height: (100% - 130px);}
+    main{left: 50%; top: 162px; transform: translateX(-50%); width: 87%; height: calc(100% - 220px);}
+    main .content_box{width: calc(100% - 20px);}
+    
+    .h_wide h2{font-size: 30px; top: 55px;}
+    .h_wide a.toHome{left: 25px; top: 25px;}
+
+    .h_wide .menu{width: 480px; height: 30px; left: 50%; top: 115px; transform: translateX(-50%);}
+    .h_wide .menu em{height: 30px; top: 0; left: 385px;}
+    .h_wide .menu nav ul{width: 480px; display: flex; margin-left: 20px;}
+    .h_wide .menu nav ul li{width: 120px; display: flex;}
+    .h_wide .menu nav ul li a{font-size: 18px; height: 30px; line-height: 30px;}
+    .h_wide .menu nav ul li a::before{top: 10px;}
+}
+
+
+/* ipad mini 해상도 미만 모바일 */
+@media screen and (max-width: 767px){
+    .container{width: calc(100% - 74px); height: (100% - 60px);}
+    main{top: 110px; width: 95%; height: calc(100% - 119px); overflow-x: hidden;}
+    main .content_box{width: 100%;}
+    .wrap{width: 410px;}
+    
+    .h_wide h2{font-size: 26px; top: 25px;}
+    .h_wide a.toHome{left: 16px; top: 20px;}
+    .h_wide a.toHome img{width: 30px; height: 30px;}
+
+    .h_wide .menu{width: 400px; top: 70px;}
+    .h_wide .menu em{top: 0; left: 305px;}
+    .h_wide .menu nav ul{width: 400px; margin-left: 10px;}
+    .h_wide .menu nav ul li{width: 100px;}
+    .h_wide .menu nav ul li a{font-size: 16px; height: 30px; line-height: 30px;}
+    
+    main .mhscroll{display: none;}
+    main .noscroll{display: block;}
+    main .noscroll549{display: none;}
+}
+
+
+/* 해상도 280 ~ 549 모바일 */
+@media screen and (max-width: 549px){
+    .container{width: 100%; height: 100%; border: none;}
+    main{width: 100%; height: calc(100% - 50px); top: 50px; left: 0; transform: translateX(0); overflow-x: hidden;}
+    main .content_box{width: 100%;}
+    .wrap{width: calc(100% - 40px);}
+
+    .h_wide{display: none;}
+    .h_mobile{display: block;}
+    .h_mobile .hd_bg{width: 100%; height: 50px; position: fixed; z-index: 100; background-color: #fff;}
+    .h_mobile .hambtn{width: 30px; height: 30px; padding: 0; margin: 0; border: none; background-color: transparent; position: absolute; left: 20px; top: 15px;}
+    .h_mobile h2{font-size: 20px; font-weight: 500; position: absolute; left: 50%; top: 20px; transform: translateX(-50%);}
+    .h_mobile a.toHome{display: block; width: 30px; height: 30px; position: absolute; right: 20px; top: 15px;}
+    .h_mobile a.toHome img{width: 20px; height: 20px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+    .menubar{width: 100%; position: absolute; top: 50px; left: 0; margin-top: -300px; z-index: 50;}
+    .menubar nav{width: 100%; height: 180px; background-color: #fff;}
+    .menubar nav ul{padding-top: 20px;}
+    .menubar nav ul li a{display: block; font-size: 18px; text-align: center; line-height: 36px; color: #3c3c3b;}
+
+    main .mhscroll{display: none;}
+    main .noscroll{display: none;}
+    main .noscroll549{display: block;}
+}
+
+
