@@ -42,11 +42,6 @@ $(document).ready(function(){
             let pos = $('#sec_works').offset().top - mar;
             $(window).scrollTop(pos);
         });
-        $('.works2023 a').on('click.adjpos',function(e){
-            e.preventDefault();
-            let pos = $('#sec_works_2023').offset().top - mar;
-            $(window).scrollTop(pos);
-        });
         $('.works2022 a').on('click.adjpos',function(e){
             e.preventDefault();
             let pos = $('#sec_works_2022').offset().top - mar;
