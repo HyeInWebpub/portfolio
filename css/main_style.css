@@ -81,7 +81,7 @@ header .txtbox em.participate{font-weight: 500; color: #e14646;}
 .who_s{width: 420px; margin-left: 20px;}
 .who h3{font-size: 40px; font-weight: 300; color: #3c3c3b; line-height: 30px; margin-bottom: 75px;}
 .who p{font-size: 20px; font-weight: 400; color: #717171; line-height: 26px;}
-.who p a{color: #e14646;}
+.who p a{color: #e14646; display: block;}
 .who_h p{width: 280px;}
 .who_s li{float: left; width: 200px; margin-bottom: 10px;}
 .who_s li:nth-child(1){margin-right: 20px;}
