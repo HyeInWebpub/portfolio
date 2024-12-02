@@ -34,15 +34,15 @@ nav.pc_nav .mainmenu::before{content: ''; display: block; width: 20px; height: 2
 /* 메인메뉴 */
 nav.pc_nav .mainmenu>li>a{display: block; height: 65px; background-color: #fff; box-sizing: border-box; position: relative;}
 nav.pc_nav .mainmenu>li>a p{padding-left: 18px; font-size: 26px; font-weight: 400; color: #3c3c3b; line-height: 65px;}
-nav.pc_nav .m_works>a p::after, nav.pc_nav .m_process>a p::after{
+/* nav.pc_nav .m_works>a p::after, nav.pc_nav .m_process>a p::after{
     content: ''; display: block; width: 17px; height: 10px;
     background: url(../images/icons/angle_down.png) no-repeat;
     position: absolute; top: 28px; right: 18px;
-}
+} */
 /* 메인메뉴별 크기 */
 nav.pc_nav .m_who>a{width: 120px; border: 1px solid #a0a0a0; border-bottom: transparent;}
 nav.pc_nav .m_focus>a{width: 190px; border: 1px solid #a0a0a0;}
-nav.pc_nav .m_works>a{width: 170px; border: 1px solid #a0a0a0; border-top: transparent; border-bottom: transparent;}
+nav.pc_nav .m_works>a{width: 170px; border: 1px solid #a0a0a0; border-top: transparent; /* border-bottom: transparent; */}
 nav.pc_nav .m_process>a{width: 220px; border: 1px solid #a0a0a0;}
 nav.pc_nav .m_other>a{width: 110px; border: 1px solid #a0a0a0; border-top: transparent;}
 /* 서브 */
@@ -61,7 +61,7 @@ nav.pc_nav .submenu{display: none;}
 header h1{float: left; width: 420px; height: 420px; background: url(../images/logo.png) no-repeat center;}
 header .txtbox{float: left; margin-top: 180px;}
 header .txtbox::before{content: ''; display: block; width: 10px; height: 26px; background-color: #e14646; float: left; margin: 0 10px 160px 0;}
-header .txtbox strong{font-size: 32px; font-weight: 400; color: #3c3c3b; line-height: 26px;}
+header .txtbox strong{font-size: 32px; font-weight: 400; color: #3c3c3b; line-height: 26px; display: block; min-width: 320px;}
 header .txtbox h2{font-size: 40px; font-weight: 400; color: #3c3c3b; line-height: 30px; margin-top: 20px;}
 header .txtbox h2::before{display: none;}
 header .txtbox p{font-size: 28px; font-weight: 400; color: #3c3c3b; margin-top: 20px; line-height: 20px;}
@@ -81,6 +81,7 @@ header .txtbox em.participate{font-weight: 500; color: #e14646;}
 .who_s{width: 420px; margin-left: 20px;}
 .who h3{font-size: 40px; font-weight: 300; color: #3c3c3b; line-height: 30px; margin-bottom: 75px;}
 .who p{font-size: 20px; font-weight: 400; color: #717171; line-height: 26px;}
+.who p a{color: #e14646;}
 .who_h p{width: 280px;}
 .who_s li{float: left; width: 200px; margin-bottom: 10px;}
 .who_s li:nth-child(1){margin-right: 20px;}
@@ -101,8 +102,8 @@ header .txtbox em.participate{font-weight: 500; color: #e14646;}
 .works{width: 100%; height: auto; background-color: #f2f2f2;}
 
 .wo_cont{padding: 70px 0 150px 0;}
-.wo_cont h3{display: inline-block; font-size: 36px; font-weight: 300; color: #808080; line-height: 27px; margin: 30px 0;}
-.wo_cont h3::before{content: ''; display: inline-block; width: 1150px; height: 1px; margin-right: 20px; background-color: #808080; vertical-align: middle;}
+.wo_cont h3{display: inline-block; font-size: 30px; font-weight: 300; color: #808080; line-height: 27px; margin: 30px 0;}
+.wo_cont h3::before{content: ''; display: inline-block; width: 1050px; height: 1px; margin-right: 20px; background-color: #808080; vertical-align: middle;}
 .wo_cont li{float: left; width: 400px; height: 140px; position: relative; border-radius: 70px; margin: 26px 0 0 20px; transition: all 0.5s;}
 .wo_cont li:nth-child(3n-2){margin-left: 0;}
 
@@ -178,7 +179,7 @@ header .txtbox em.participate{font-weight: 500; color: #e14646;}
 
 
 /* ======== 푸터 ======== */
-footer{width: 100%; height: 50px; background-color: #3c3c3b; text-align: center; margin-top: 200px;}
+footer{width: 100%; height: 50px; background-color: #3c3c3b; text-align: center; /* margin-top: 200px; */}
 footer p{font-size: 16px; font-weight: normal; color: #fff; line-height: 50px;}
 
 

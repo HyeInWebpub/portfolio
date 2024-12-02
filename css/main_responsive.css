@@ -235,7 +235,7 @@
     .headbox{width: 85%; margin: 0 auto;}
     header h1{width: 90%; height: 240px; background-size: contain; background-position: 0px 0px;}
     header .txtbox{width: 100%; margin: 30px 0; box-sizing: border-box;}
-    header .txtbox strong{font-size: 20px; margin: 5px 0;}
+    header .txtbox strong{font-size: 20px; margin: 5px 0; min-width: 0;}
     header .txtbox h2{font-size: 30px; margin: 5px 0;}
     header .txtbox p{font-size: 22px; margin: 5px 0;}
     header .txtbox em{font-size: 16px; margin: 5px 0;}
@@ -272,7 +272,7 @@
     /* ======== 섹션3 works ======== */
     .works{width: 100%; height: auto;}
     .wo_cont{width: 85%; margin: 0 auto;}
-    .wo_cont h3::before{width: 200px;}
+    .wo_cont h3::before{width: 100px;}
     .wo_cont h3{width: 100%; font-size: 26px;}
     .wo_cont ul{width: 100%; margin: 0 auto;}
     .wo_cont li{width: 190px; height: 80px; margin: 0; margin-bottom: 20px; margin-right: 20px; transition: all 0.5s;}
